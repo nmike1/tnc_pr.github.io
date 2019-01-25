@@ -1,0 +1,236 @@
+<!--PROJECT TEEN CODE-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<link rel="stylesheet" type="text/css" href="project_tc.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="project_tc.js"></script>
+</head>
+<body>
+
+	<main class="main">
+		
+		<!--NAVIGATION BAR-->
+
+		<nav class="nav">
+
+			<div id="hdr_hld">
+
+				<header id="hdr">CSS</header>
+				<span id="sem_hdr">Refrence</span>
+
+			</div>
+
+			<!--SECTION HEADER-->
+			<span id="sec_hdr">CSS Basics</span>
+
+			<!--NEXT AND PREV-->
+			<div id="selections">
+				<a href="#" id="selections_href" class="section1_show">Introduction</a>
+				<a href="#" id="selections_href" class="section2_show">Applying CSS Rules to a Webpage</a>
+			</div>
+
+		</nav>
+
+		<!--MAIN CONTENT-->
+		<div id="cnt_hld">
+			
+			<!--SECTION 1-->
+			<section id="css_basics">
+
+			    <div id="section1">
+				<!--CSS BASICS HEADER-->
+				<header id="cnt_hdr">
+					Introduction
+				</header>
+
+				<!--BASICS CONTENT-->
+				<p id="cnt_par">
+					Cascading Style Sheets (CSS) provide a simple way to style the content on your web pages. CSS may look complicated to first-time users, but this chapter shows how easy it is to use CSS.
+				</p>
+
+				<p id="cnt_par">
+					Here’s an exercise with the traditional “Hello, world!” example. First, open a text editor or a favorite web page editor tool and enter the following: 
+				</p>
+
+				<!--BASICS CODE-->
+				<xmp id="cnt_cd">
+					<!DOCTYPE>
+					<html>
+					<head>
+					    <title>CSS Cookbook</title> 
+					</head>
+					 <body>
+					   <p>Hello, world!</p>
+					 </body> 
+					</html>
+				</xmp>
+
+				<p id="cnt_par">
+					Save the file and view it in your web browser.
+				</p>
+
+				<p id="cnt_par">
+					To change the style of the HTML text to sans serif, add the following:
+				</p>
+
+				<xmp id="cnt_cd">
+					<p style="font-family: sans-serif;">Hello, world!</p>
+				</xmp>
+
+				<p id="cnt_par">
+					To keep the default font but change the font size to 150%, use the following code:
+				</p>
+
+				<xmp id="cnt_cd">
+					<p style="font-size: 150%">Hello, world!</p>
+				</xmp>
+
+				<p id="cnt_par">
+					In this section, you’ll learn about selectors and properties, organizing stylesheets, and positioning. These general recipes will prepare you for fancier recipes in upcoming sections.
+				</p>
+				</div>
+
+				<!--APPLYING CSS RULES TO WEBPAGE-->
+				<div id="section2">
+					<header id="cnt_hdr2"> Applying CSS Rules to a Web Page </header>
+
+					<!--APPLY CSS CONTENT-->
+					<p id="cnt_par">
+						Start with a blank page in Notepad, your favorite text processor, or HTML development software such as Adobe Dreamweaver or Microsoft Expression
+					</p>
+
+					<p id="cnt_par">
+						Then add the following HTML between the body tags, and save the file as 
+					</p>
+
+					<xmp id="cnt_cd">
+						<html>
+						<head>
+						   <title>CSS Cookbook</title>
+						    </head> 
+						    <body>  
+						    	<h1>Title of Page</h1>  
+						    	<p>This is a sample paragraph with a <a href="http://csscookbook.com">link</a>.</p> 
+						    </body>
+						</html> 
+					</xmp>
+
+					<p id="cnt_par">
+						Now add the following code changes (shown in boldface) to redefine the style for links, bulleted lists, and headers
+					</p>
+
+					<xmp id="cnt_cd">
+						<html>
+						 <head>
+						   <title>CSS Cookbook</title>
+						     <style type="text/css">
+						       body {   font-family: verdana, arial, sans-serif;  }
+						       h1 {   font-size: 120%;  }
+						       a {   text-decoration: none;  }
+						       p {   font-size: 90%;  }
+						     </style>
+						 </head>
+						 <body>  
+						       <h1>Title of Page</h1>
+						       <p>This is a sample paragraph with a <a href="http://csscookbook.com">link</a>.</p>
+						 </body>
+						</html>
+					</xmp>
+
+					<p id="cnt_par">
+						CSS contains rules with two parts: selectors and properties. A selector identifies what portion of your web page gets styled. Within a selector are one or more properties and their values.
+					</p>
+
+					<p id="cnt_par">
+						The property tells the browser what to change, and the value lets the browser know what that change should be.
+					</p>
+
+					<p id="cnt_par">
+						For instance, in the following declaration block example, the selector tells the browser to style the content marked up with h1 elements in the web page to 120% of the default size: 
+					</p>
+
+					<xmp id="cnt_cd">
+						
+						h1 { 
+						font-size: 120%;
+						}
+					</xmp>
+
+					<p id="cnt_par">
+						The standard for writing CSS syntax includes the selector, which is normally the tag you want to style, followed by properties and values enclosed within curly braces: 
+					</p>
+
+					<xmp id="cnt_cd">
+						
+						selector { property: value; }
+					</xmp>
+
+					<p id="cnt_par">
+						However, most designers use the following format to improve readability:
+					</p>
+
+					<xmp id="cnt_cd">
+						
+						selector {
+						property: value;
+						} 
+					</xmp>
+
+					<p id="cnt_par">
+						The addition of whitespace and line breaks helps make the CSS more readable. Both are valid approaches to writing CSS. Use whatever method is more comfortable for you. 
+					</p>
+
+					<p id="cnt_par">
+						Also, CSS allows selectors to take on more than one property at a time, to create more complex visual presentations. To assign multiple properties within a selector, use a semicolon to separate the properties, as shown in the following xmp.
+					</p>
+
+					<p id="cnt_par">
+						 Note the use of the semicolon following the last property in the list, though there are no other properties following it. This ensures that we can quickly add new items, without the potential of adding errors by forgetting the separator: 
+					</p>
+
+					<xmp id="cnt_cd">
+						
+						selector {  
+						property: value;  
+						property: value, value, value;  
+						property: value value value value; 
+					    } 
+
+						selector, selector {  
+						property: value; 
+					    }
+					</xmp>
+
+					<p id="cnt_par">
+						For internal stylesheets, the CSS rules are wrapped within the HTML style element: 
+					</p>
+
+					<xmp id="cnt_cd">
+						
+						<style type="text/css">
+						  <!-
+						  -->
+						</style>
+					</xmp>
+
+					<p id="cnt_par">
+						The style element informs the browser that the content inside the element comprises formatted CSS rules and that the browser should be prepared to process the content. 
+					</p>
+
+					<p id="cnt_par">
+						The HTML comment is there to shield older browsers that do not know how to render CSS rules appropriately. For most modern browsers, the HTML comment is no longer needed.
+					</p>
+
+				</div>
+
+			</section>
+
+		</div>
+
+	</main>
+
+</body>
+</html>

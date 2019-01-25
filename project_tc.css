@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url("Images/prick_flower.jpg") no-repeat;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	background: rgba(20, 20, 20, 0.7);
+}
+.nav{
+	width: 100%;
+	height: 100px;
+	background: rgba(0, 0, 0, 0);
+}
+.nav #hdr_hld #hdr{
+	font-family: encode sans;
+	font-size: 35px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 255);
+	padding: 0;
+	margin: 0;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.nav #hdr_hld #sem_hdr{
+	font-family: alegreya sans thin;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 255);
+	padding: 0;
+	margin: 0;
+	padding-top: 60px;
+	padding-left: 40px;
+}
+.nav #sec_hdr{
+	font-family: alegreya sans light;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 255);
+	padding: 0;
+	margin: 0;
+	padding-top: 0px;
+	padding-left: 193px;
+}
+.nav #nxt_prv_hld{
+	display: inline-grid;
+	position: fixed;
+}
+.nav #nxt_prv{
+	font-family: encode sans;
+	font-size: 15px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	text-decoration: none;
+}
+#cnt_hld{
+	width: 60%;
+	height: 507px;
+	margin-top: 50px;
+	margin-left: 15%;
+	background-color: rgba(0, 0, 0, 0);
+}
+#css_basics{
+	margin-left: 2%;
+	overflow-y: scroll;
+	height: 90%;
+}
+#cnt_hdr{
+	font-family: encode sans;
+	font-size: 35px;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+#cnt_hdr2{
+	font-family: encode sans;
+	font-size: 35px;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+#cnt_par{
+	font-family: alegreya sans light;
+	font-size: 15px;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+}
+#cnt_cd{
+	font-family: alegreya sans thin;
+	font-size: 15px;
+	color: rgb(200, 200, 200);
+	padding: 0;
+	margin: 0;
+	padding-top: 25px;
+	word-break: normal;
+	word-spacing: normal;
+}
+#section2{
+	display: none;
+}
+#selections{
+	width: 160px;
+	height: 220px;
+	background-color: rgba(20, 20, 20, 0);
+	position: relative;
+	display: inline-grid;
+	float: right;
+}
+#selections_href{
+	font-family: encode sans;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+}
+.section2_show{
+	position: relative;
+	bottom: 70px;
+}
